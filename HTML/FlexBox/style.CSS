@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+}
+
+aside#menuLateral{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 100vh;
+    background-color: #fd4556;
+}
+
+.Menu{
+    margin: 50px;
+    font-size: 30px;
+    font-family: "Jaro", sans-serif;
+    color: black;
+}
+
+section{
+    background-color: black;
+    width: 85vw;
+}
