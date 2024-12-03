@@ -24,6 +24,18 @@ aside#menuLateral{
     width: 14vw;
     height: 100%;
     background-color: #660011;
+    align-items: center;
+}
+
+.Menu{
+    margin: 50px;
+    font-size: 30px;
+    font-family: "Jaro", sans-serif;
+    color: black;
+}
+
+.textoMENU{
+    color: #000000;
 }
 
 /* Logo Menu Lateral */
@@ -40,11 +52,6 @@ section{
     padding: 10px;
 }
 
-/* Texto Menu */
-
-.textoMENU{
-    color: #000000;
-}
 /* ---------------------------------------- */
 
 /* CARDS */
@@ -106,13 +113,6 @@ section{
      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
-}
-
-.Menu{
-    margin: 50px;
-    font-size: 30px;
-    font-family: "Jaro", sans-serif;
-    color: black;
 }
 
 /*Fundo Cards Alinhamento*/
