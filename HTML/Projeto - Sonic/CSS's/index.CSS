@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px ;
+}
+
+main#container{
+    background-color: #91bdf3;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    width: 89vw;
+    height: 15vh;
+    background-color: #1C6DD0;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.paginaFORM{
+    font-family: "Bangers", system-ui;
+    display: flex;
+    color: #FFD700;
+    padding: 30px;
+}
+
+.barraPesquisa{
+    border: groove;
+    border-radius: 30%;
+    width: 300px;
+    padding: 4px;
+    color: #1C6DD0;
+}
+
+/*-------------------------------------------------*/
+/* MENU LATERAL CONFIGS */
+.menuLateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11vw;
+    height: 100vh;
+    background-color: #1C6DD0;
+    background-image: url(../Imagens/SonicGangESQ.png);
+}
+
+.menuLateral2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.6;
+}
+
+.paginaINICIO{
+    font-size: 37px;
+    font-family: "Bangers", system-ui;
+    display: flex;
+    color: #FFD700;
+}
+
+.paginaLIVRE{
+    font-family: "Bangers", system-ui;
+    display: flex;
+    color: #FFD700;
+}
+
+.paginaLIVRE2{
+    font-family: "Bangers", system-ui;
+    display: flex;
+    color: #FFD700;
+}
+
+.textoLOGO{
+    font-family: "Bangers", system-ui;
+    color: #FFD700;
+    font-size: 50px;
+    padding: 50px;
+}
+
+/*-------------------------------------------------*/
+
+
