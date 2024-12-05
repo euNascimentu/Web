@@ -6,7 +6,7 @@
 }
 
 main#container {
-    background-image: url(../Imagens/backgroundOURIÇO.jpg);
+    background-image: url(../Imagens/GERAL/backgroundOURIÇO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -55,7 +55,7 @@ main#container {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../Imagens/knucklesLATERAL.jpg);
+    background-image: url(../Imagens/GERAL/knucklesLATERAL.jpg);
     position: fixed;
     top: 0;
     left: -9vw;
