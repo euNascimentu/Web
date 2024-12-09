@@ -240,11 +240,12 @@ section{
     color: #555;
 }
 
-.carcVYSE:hover {
-    transform: translate(-0px, -4px)
+.cardVYSE:hover {
+    transform: translate(-4px, -4px)
 }
 
-/* Texto Card MIBR */
+/* Texto Card VYSE */
+
 .textoVYSE{
     color: lightsalmon;
     font-size: 17px;
@@ -252,6 +253,94 @@ section{
 }
 
 .textoVYSE2{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* --------------------------------------------- */
+
+/* Card VYSE */
+
+.cardERROR {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 1);
+    width: 260px;
+    margin: 20px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+.cardERROR img {
+    width: 100%;
+    height: 100px;
+}
+.cardERROR .container {
+    padding: 15px;
+}
+.cardERROR h4 {
+    margin: 0 0 10px;
+}
+.cardERROR p {
+    color: #555;
+}
+
+.cardERROR:hover {
+    transform: translate(-0px, -4px)
+}
+
+/* Texto Card MIBR */
+.textoERROR{
+    color: lightsalmon;
+    font-size: 17px;
+    text-align: center;
+}
+
+.textoERROR{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* --------------------------------------------- */
+
+/* Card VYSE */
+
+.cardERROR2 {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 1);
+    width: 260px;
+    margin: 20px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+.cardERROR2 img {
+    width: 100%;
+    height: 100px;
+}
+.cardERROR2 .container {
+    padding: 15px;
+}
+.cardERROR2 h4 {
+    margin: 0 0 10px;
+}
+.cardERROR2 p {
+    color: #555;
+}
+
+.cardERROR2:hover {
+    transform: translate(-0px, -4px)
+}
+
+/* Texto Card MIBR */
+.textoERROR2{
+    color: lightsalmon;
+    font-size: 17px;
+    text-align: center;
+}
+
+.textoERROR2{
     font-family: Arial, sans-serif;
     text-align: center;
     color: white;
