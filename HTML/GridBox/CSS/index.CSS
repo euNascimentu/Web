@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: grid;
+    background-image: url(../IMAGENS/backgroundCHAVES.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    grid-template-columns: 2fr repeat(5, 3fr);
+    grid-template-rows: 150px 80px 420px 100px;
+    grid-gap: 2px;
+}
+
+.divLogo{
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;  
+}
+
+.divTexto{
+    background-color: white;
+    grid-column: 2 / 6;
+    justify-self: center;
+    align-self: center;   
+}
+
+
+.logo{
+    width: 100px;
+}
+
+.textoLOGO{
+    color: white;
+}
+header{
+    /* Configs Filho */
+    grid-column: 1 / -1;
+
+    /* Configs Pai */
+    display: grid;
+    grid-template-columns: 2fr 15fr;
+
+}
+nav{
+    background-color: brown;
+    grid-column: 2 / 6 ;
+}
+main{
+    background-color: yellow;
+    grid-column: 2/ 6;
+}
+footer{
+    background-color: purple;
+    grid-column: 2 / 6;
+}
+
