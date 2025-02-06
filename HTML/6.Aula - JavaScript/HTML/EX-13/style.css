@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+}
+
+#AnoNasc{
+    width: 150px;
+    height: 20px;
+}
+
+.quadrado{
+    background-color: rgb(204, 204, 204);
+    border-radius: 5%;
+    box-shadow: 2px 4px 10px 5px rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 43vw;
+    height: 40vh;
+}
+
+h1{ 
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
