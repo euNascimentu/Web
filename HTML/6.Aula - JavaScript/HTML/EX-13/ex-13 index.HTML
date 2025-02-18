@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="script.JS">
     <link rel="stylesheet" href="style.css">
-    <title> Verificador de Idade </title>
-
+    <title>Verificador de Idade</title>
 </head>
-
 <body>
-    <main id="container">
-        <h1> Verificador de idade </h1>
 
-        <div class="quadrado">
-            Ano de Nascimento: <input type="number" name="Digite a idade" id="AnoNasc"><br>
-            <input type="radio" name="Masculino" id="radioMasc"> 
-            <label for="Homem">Homem</label>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano Nascimento:
+                <input type="number" id="ano" min="1900" max="2023" placeholder="De 1900 à 2024">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="sexo">Feminino</label>
+                <input id="button" type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-    </main>
+        <div>
+            <img id="imagem" src="bebemenina.jpg" alt="Criança Menino">
+            <p id="texto"></p>
+        </div>
+    </section>
+    <footer> 
+        <p>&copy; Marcos Augusto</p>
+    </footer>
 
+    <script src="script.js"></script>
+    
 </body>
-
 </html>
