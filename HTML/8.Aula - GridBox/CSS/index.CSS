@@ -114,7 +114,7 @@ nav{
 
 main{
     grid-column: 2/6;
-    
+
     display: flex;
 }
 
@@ -133,7 +133,7 @@ main{
 
 .textoMAIN1{
     background-color: rgba(163, 105, 83, 0.5);
-    display: flex;
+    display: block;
     padding: 10px;
     width: 70%;
     height: 80%;
@@ -147,7 +147,7 @@ main{
 
 .textoMAIN2{
     background-color: rgba(163, 105, 83, 0.5);
-    display: flex;
+    display: block;
     padding: 10px;
     width: 70%;
     height: 80%;
