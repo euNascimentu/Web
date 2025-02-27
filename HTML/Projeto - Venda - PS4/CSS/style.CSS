@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../Source/BgCinza.jpg);
+    /*background-color: gray;*/
+}
+
+header{
+    background-color: #0d7094;
+    display: flex;
+    width: 100vw;
+    height: 11vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bungee", serif;
+    font-size: 30px;
+}
+
+#logo{
+    width: 102px;
+    height: 102px;
+}
+
+nav{
+    display: flex;
+    width: 10vw;
+    height: 89vh;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    background-color: #0d7094;
+    position: fixed;
+    left: -9vw;
+    transition: transform 0.9s ease-in-out;
+}
+
+nav:hover {
+    background-color: #0d7094;
+    box-shadow: 5px 3px 7px powderblue;
+    transform: translate(9vw, 0vh);
+}
+
+#logoPS{
+    margin-top: 110px;
+    width: 189px;
+    height: 200px;
+}
+
+#Console{
+    margin-top: 55px;
+    display: block;
+}
+
+#TextoConsole{
+    color: white;
+    text-shadow: 2px 4px 5px black;
+    text-decoration: none;
+    font-family: "Bungee", serif;
+    font-size: 20px;
+}
+
+#Controle{
+    display: block;
+}
+
+#TextoControle{
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-decoration: none;
+    font-family: "Bungee", serif;
+    font-size: 20px;
+}
+
+section{
+    background-color: #0d7094;
+    margin: auto;
+    margin-top: 20px;
+    padding: 13px;
+    width: 70vw;
+}
+
+#Banner{
+    background-image: url(../Source/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px #ffffff;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+#FundoCard{
+    background-color: #0d7094;
+    box-shadow: 0px 0px 10px #075774;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.Cards{
+    background-color: lightgrey;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    width: 230px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.FotoCards{
+    width: 240px;
+    height: 170px;
+}
+
+.TextoCards{
+    font-size: 21px;
+}
