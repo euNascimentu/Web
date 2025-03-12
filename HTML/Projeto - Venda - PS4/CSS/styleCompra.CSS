@@ -78,6 +78,7 @@ nav:hover {
 
 section{
     background-color: #0d7094;
+    display: flex;
     margin: auto;
     margin-top: 20px;
     padding: 17px;
@@ -86,67 +87,37 @@ section{
     justify-items: center;
 }
 
-#Banner{
-    background-image: url(../Source/Banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0px 0px 10px 6px #8adffd;
-    border: solid;
-    display: block;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
+#ladoEsquerdo{
+    margin-right: 100px;
 }
 
-#FundoCard{
-    margin-top: 30px;
+#form{
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-}
-
-.Cards{
-    background-color: #075774;
-    box-shadow: 0px 0px 10px #030303;
-    display: flex;
-    flex-flow: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    width: 230px;
-    height: 300px;
-    border-radius: 20px;
-    transition: 0.5s;
+    flex-flow: column;
 }
 
-.Cards:hover{
-    transform: translate( 0px, -13px);
-}
-
-.FotoCards{
-    width: 240px;
-    height: 170px;
-}
-
-.TextoCards{
-    font-size: 16px;
-    font-family: "Bungee", serif;"
-}
-
-#BotãoComprar{
-    display: flex;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid;
-    margin-top: 20px;
-    transition: 1s;
-    font-size: 13px;
+.lblbox{
+    margin-top: 10px;
     font-family: "Bungee", serif;
 }
 
-#BotãoComprar:hover{
-    background-color: #c0fcc3;
-    border-color: #508853;
-    transform: translate( 0px, -1px);
+#botaoComprar{
+    background: lightgray;
+    border: solid 2px #80b4c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #8ecae0;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+#ladoDireito{
+    background-color:#247b9b;
+    box-shadow: 0px 0px 10px 3px #8ecae0;
+    display: flex;
+    width: 80%;
+    padding: 15px;
 }

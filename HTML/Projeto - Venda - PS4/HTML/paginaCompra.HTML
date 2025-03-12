@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleCompra.CSS">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+    </style>
+    <title> Compre Aqui </title>
+</head>
+
+<body>
+    <Header>
+        <img id="logo" src="../Source/Oni-Logo.png" alt="">
+        Playstation Space
+    </Header>
+    <nav>
+        <img id="logoPS" src="../Source/Playstation-Logo.png" alt="">
+        <div id="Console">
+            <a id="TextoConsole" href="#">Console</a>
+        </div>
+        <div id="Controle">
+            <a id="TextoControle" href="#">Controle</a>
+        </div>
+    </nav>
+    <section>
+        <div id="ladoEsquerdo">
+            <form id="form" action="dados.PHP">
+                <label class="lblbox" for="nome">Nome:</label>
+                <input class="lblbox" type="text" name="nome" placeholder="ex: Fernando">
+
+                <label class="lblbox" for="peso">Modelo:</label>
+                <input class="lblbox" type="search" name="Modelo" placeholder="ex: Controle PS4">
+
+                <label class="lblbox" for="altura">Personalizacao:</label>
+                <input class="lblbox" type="number" name="Personalizacao" placeholder="ex: GOW">
+
+                <button id="botaoComprar"> Enviar </button>
+            </form>
+        </div>
+        <div id="ladoDireito">
+            estouaqui
+        </div>
+    </section>
+</body>
+
+</html>
