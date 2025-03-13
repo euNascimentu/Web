@@ -136,23 +136,17 @@ body{
     justify-content: center;
 }
 
-.labels{
-    font-family: "Exo 2", sans-serif;
-    font-size: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
 .inputs{
     font-family: "Exo 2", sans-serif;
-    border: solid 1px black;
+    border: none 1px black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
+    margin-top: 15px;
 }
 
 .mesa{
     font-size: 15px;
-    font-family: "Neuton", serif;
+    font-family: "Exo 2",sans-serif;
 }
 
 #botao{
