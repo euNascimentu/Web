@@ -6,12 +6,17 @@
 }
 
 body.light-mode{
-    background-color: #D1C1FF;
-    transition: background-color 0.3s, color 0.3s;
+    background-image: url(../Source/lighttheme.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s;
 }
 
 body.dark-mode{
-    background-color: red;
+    background-image: url(../Source/darktheme.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s;
 }
 
 header{
@@ -24,6 +29,7 @@ header{
     font-size: 45px;
     font-family: "League Spartan", sans-serif;
 }
+
 section{
     background-color: #744B92;
     border-radius: 20px;

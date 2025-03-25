@@ -101,30 +101,34 @@
 </body>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.getElementById("input");
+    const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
 
     // Verifica se há um tema salvo no localStorage
     if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark-mode");
-        themeToggle.checked = true;
-    }
-    else{
+        body.classList.remove("light-mode");
+        "theme-toggle".checked = true;
+    } else {
         body.classList.add("light-mode");
-        themeToggle.checked = false;
+        body.classList.remove("dark-mode");
+        "theme-toggle".checked = false;
     }
 
     // Alternar tema ao mudar o switch
     themeToggle.addEventListener("change", () => {
         if (themeToggle.checked) {
             body.classList.add("dark-mode");
+            body.classList.remove("light-mode");
             localStorage.setItem("theme", "dark");
         } else {
-            body.classList.remove("light-mode");
+            body.classList.add("light-mode");
+            body.classList.remove("dark-mode");
             localStorage.setItem("theme", "light");
         }
     });
 });
+
 
 </script>
 
