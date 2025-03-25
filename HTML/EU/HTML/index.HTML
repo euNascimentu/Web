@@ -16,7 +16,7 @@
         Fernando Nascimento
 
         <label class="switch">
-            <input id="theme-toggle" type="checkbox" checked="darkTheme" >
+            <input id="theme-toggle" type="checkbox" checked="darkTheme">
             <div class="slider round">
                 <div class="sun-moon">
                     <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
@@ -98,38 +98,48 @@
             </a>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeToggle = document.getElementById("theme-toggle");
+            const body = document.body;
+            const section = document.querySelector("section");
+
+            // Verifica se há um tema salvo no localStorage
+            const savedTheme = localStorage.getItem("theme") || "light";
+
+            if (savedTheme === "dark") {
+                body.classList.add("dark-mode");
+                body.classList.remove("light-mode");
+                section.classList.add("dark-mode");
+                section.classList.remove("light-mode");
+                themeToggle.checked = true;
+            } else {
+                body.classList.add("light-mode");
+                body.classList.remove("dark-mode");
+                section.classList.add("light-mode");
+                section.classList.remove("dark-mode");
+                themeToggle.checked = false;
+            }
+
+            // Alternar tema ao mudar o switch
+            themeToggle.addEventListener("change", () => {
+                if (themeToggle.checked) {
+                    body.classList.add("dark-mode");
+                    body.classList.remove("light-mode");
+                    section.classList.add("dark-mode");
+                    section.classList.remove("light-mode");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    body.classList.add("light-mode");
+                    body.classList.remove("dark-mode");
+                    section.classList.add("light-mode");
+                    section.classList.remove("dark-mode");
+                    localStorage.setItem("theme", "light");
+                }
+            });
+        });
+
+    </script>
 </body>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.getElementById("theme-toggle");
-    const body = document.body;
-
-    // Verifica se há um tema salvo no localStorage
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        body.classList.remove("light-mode");
-        "theme-toggle".checked = true;
-    } else {
-        body.classList.add("light-mode");
-        body.classList.remove("dark-mode");
-        "theme-toggle".checked = false;
-    }
-
-    // Alternar tema ao mudar o switch
-    themeToggle.addEventListener("change", () => {
-        if (themeToggle.checked) {
-            body.classList.add("dark-mode");
-            body.classList.remove("light-mode");
-            localStorage.setItem("theme", "dark");
-        } else {
-            body.classList.add("light-mode");
-            body.classList.remove("dark-mode");
-            localStorage.setItem("theme", "light");
-        }
-    });
-});
-
-
-</script>
 
 </html>
