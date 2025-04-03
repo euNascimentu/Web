@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #005363;
+}
+
+header{
+    background-color: #005363;
+    display: flex;
+    height: 60px;
+}
+
+section{
+    background-color: #BBC5C7;
+    display: flex;
+    height: 700px;
+}
+
+footer{
+    background-color: #BBC5C7;
+    display: flex;
+    height: 77px;
+    margin-top: 2px;
+}
