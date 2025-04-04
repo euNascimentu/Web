@@ -73,7 +73,7 @@ header{
 section{
     background-color: #BBC5C7;
     display: flex;
-    height: 717px;
+    height: 816px;
 }
 
 footer{
@@ -81,8 +81,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 60%;
     margin-top: 2px;
+    padding: 10px;
 }
 
 .data{
@@ -117,4 +118,55 @@ footer{
 .textoPriv{
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 768px) {
+    #cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clicksHeader, .botoesHeader {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .data,
+    .privacidade,
+    .redes {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .entrar,
+    .cadastrar {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .clicksHeader,
+    .botoesHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .privacidade {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textoPriv {
+        margin: 5px 0;
+    }
 }
