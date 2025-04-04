@@ -6,24 +6,115 @@
 }
 
 body{
-    background-color: #005363;
+    background-color: #044754;
 }
 
 header{
-    background-color: #005363;
+    background-color: #044754;
     display: flex;
+    height: 60px;
+}
+
+#cabecalho{
+    /* background-color: red; */
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    margin: auto;
+    right: 200px;
+    width: 85%;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+}
+
+.refs{
+    color: white;
+    text-decoration: none;
+}
+
+.clicksHeader{
+    /* background-color: blue; */
+    display: flex;
+    margin: auto;
+    width: 74%;
+    justify-content: space-around;
+}
+
+.botoesHeader{
+    /* background-color: white; */
+    display: flex;
+    margin: auto;
+    width: 20%;
+    justify-content: space-around;
+    
+}
+
+.entrar{
+    background-color: transparent;
+    width: 70px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.cadastrar{
+    background-color: white;
+    color: #044754;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.logoHeader{
+    width: 60px;
     height: 60px;
 }
 
 section{
     background-color: #BBC5C7;
     display: flex;
-    height: 700px;
+    height: 717px;
 }
 
 footer{
     background-color: #BBC5C7;
     display: flex;
-    height: 77px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
     margin-top: 2px;
+}
+
+.data{
+    position: relative;
+    left: 50px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    width: 13%;
+    position: relative;
+}
+
+.logosRedes{
+    width: 30px;
+    height: 30px;
+}
+
+.privacidade{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    position: relative;
+    right: 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+.textoPriv{
+    text-decoration: none;
+    color: black;
 }
