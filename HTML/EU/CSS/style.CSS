@@ -9,14 +9,14 @@ body.light-mode {
   background-image: url(../Source/lighttheme.png);
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 1s;
+  transition: ease-in-out 0.3s;
 }
 
 body.dark-mode {
   background-image: url(../Source/darktheme.png);
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 1s;
+  transition: ease-in-out 0.3s;
 }
 
 header {
@@ -523,5 +523,90 @@ section {
 
   100% {
     transform: scale(1);
+  }
+}
+
+/* RESPONSIVIDADE */
+
+/* Celular */
+
+@media (max-width: 767px) {
+  body.light-mode {
+    background-image: url(../Source/DiaCell.jpg);
+  }
+
+  body.dark-mode {
+    background-image: url(../Source/NoiteCelljpg.jpg);
+  }
+
+  header {
+    width: 90%;
+    margin-top: 100px;
+  }
+
+  h1.light-mode,
+  h1.dark-mode {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 100px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logos {
+    width: 70px;
+    height: 70px;
+  }
+
+  .fundoLogo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body.light-mode {
+    background-image: url(../Source/tablet-light.png);
+  }
+
+  body.dark-mode {
+    background-image: url(../Source/tablet-dark.png);
+  }
+
+  header {
+    width: 70%;
+    margin-top: 150px;
+  }
+
+  h1.light-mode,
+  h1.dark-mode {
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .logos {
+    width: 80px;
+    height: 80px;
+  }
+
+  .fundoLogo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 }
